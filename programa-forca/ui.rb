@@ -5,6 +5,12 @@ def apresenta_jogo
 	puts "Você está pronto para jogar, #{nome}"
 end
 
+def pede_o_chute
+	puts "Chute uma palavra ou letra"
+	chute = gets.strip.downcase
+	chute
+end	
+
 def sorteia_palavra_secreta
 	puts "Sorteando a palavra..."
 	arquivo = File.read("dicionario.txt")
