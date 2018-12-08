@@ -1,7 +1,6 @@
 require_relative "ui"
 
 def cria_mascara chutes, palavra_secreta
-	mascara = "_"
 	
 	for letra in palavra_secreta.chars
 		if chutes.include? letra 
