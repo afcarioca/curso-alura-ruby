@@ -19,11 +19,13 @@ def verifica_chute_repetido chute, chutes
 		if chutes.include? chute
 			repetido chute
 			chute = pede_o_chute
+			puts "\n\n\n\n\n"
 		else
 			break
 		end	
 	end
 
+	chutes << chute
 end	
 
 def logica_do_jogo
@@ -47,8 +49,6 @@ def logica_do_jogo
 			chute = pede_o_chute
 
 			verifica_chute_repetido chute, chutes
-
-			chutes << chute
 
 			if chute.size > 1
 				if chute == palavra_secreta
