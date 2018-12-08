@@ -18,7 +18,7 @@ def verifica_chute_repetido chute, chutes
 
 	loop do
 		if chutes.include? chute
-			repetido
+			repetido chute
 			chute = pede_o_chute
 		else
 			break
@@ -57,7 +57,9 @@ def logica_do_jogo
 					pontos_acumulados += 100
 					break
 				else
+
 					erros +=1
+					mostra_erros erros
 					pontos_acumulados -= 30
 					next	
 				end
