@@ -1,4 +1,5 @@
 require_relative "ui"
+require_relative "rank"
 
 def cria_mascara chutes, palavra_secreta
 	
@@ -74,5 +75,7 @@ def logica_do_jogo
 	end	
 
 	quantidade_de_pontos pontos_acumulados
+
+	le_rank nome, pontos_acumulados
 
 end	
