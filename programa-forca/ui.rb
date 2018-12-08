@@ -23,8 +23,8 @@ def mostra_mascara mascara
 	puts "#{mascara}"
 end
 
-def repetido
-	puts "O chute já foi dado"
+def repetido chute
+	puts "O chute #{chute} já foi dado"
 end
 
 def ganhou_o_jogo
