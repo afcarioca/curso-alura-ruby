@@ -41,7 +41,7 @@ def logica_do_jogo
 
 	while erros < 5
 
-			mascara = cria_mascara chutes palavra_secreta
+			mascara = cria_mascara chutes, palavra_secreta
 
 			mostra_mascara mascara
 
