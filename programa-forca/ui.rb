@@ -3,6 +3,7 @@ def apresenta_jogo
 	puts "Entre com seu nome"
 	nome = gets.strip
 	puts "Você está pronto para jogar, #{nome}"
+	nome
 end
 
 def pede_o_chute

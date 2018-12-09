@@ -31,7 +31,7 @@ end
 
 def logica_do_jogo
 
-	apresenta_jogo
+	nome = apresenta_jogo
 
 	erros = 0
 
