@@ -76,6 +76,10 @@ def logica_do_jogo
 
 	quantidade_de_pontos pontos_acumulados
 
-	le_rank nome, pontos_acumulados
+	lista_arquivo = le_rank
+
+	if pontos_acumulados > lista_arquivo[1].to_i
+		atualiza_rank nome, pontos_acumulados
+	end	
 
 end	
